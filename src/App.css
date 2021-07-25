@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+.grid-container {
+  width: 70%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.btn button {
+  border-style: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: #30a7d7;
+  color: #fff;
+  font-size: 1em;
+}
+
+.TitleSection {
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  color: aquamarine;
+  flex-direction: column;
+  display: flex;
+  color: aliceblue;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.TitleSection input {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  border-style: solid;
+  border: 1px rgb(0, 0, 0);
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 2px 2px rgb(251, 202, 60);
+}
+
+.TitleSection button {
+  width: 180px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  font-size: 18px;
+  color: aliceblue;
+  background-color: rgb(14, 14, 14);
+}
+
+.TitleSection button:hover {
+  cursor: pointer;
+}
+
+.DisplaySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-family: sans-serif;
+  flex-direction: column;
+}
+
+p {
+  margin: 0;
+}
+
+.Card {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.Card__img {
+  text-align: center;
+}
+
+.Card__types {
+  display: flex;
+  justify-content: center;
+}
+
+.Card__type {
+  padding: 5px 10px;
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+  background: cyan;
+  color: #fff;
+}
+
+.Card__name {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.Card__info {
+  margin-left: 10px;
+}
+
+.Card__data {
+  padding-bottom: 10px;
+}
+
+.Card__data .title {
+  font-weight: 700;
+}
+
+.App1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fbff00;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  letter-spacing: 3px;
+}
+
+.pokhead {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  color: #fbff00;
+}
+
+@keyframes example {
+  0% {
+    letter-spacing: 3px;
+    color: #fbff00;
+  }
+
+  50% {
+    letter-spacing: 5px;
+    color: #ff0000;
+  }
+
+  100% {
+    letter-spacing: 3px;
+    color: #fbff00;
+  }
+}
